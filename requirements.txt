@@ -4,4 +4,4 @@ websockets
 chardet
 requests
 bs4
-telebot
+pyTelegramBotAPI
