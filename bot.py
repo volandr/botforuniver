@@ -18,7 +18,7 @@ def horoscope_parse(base_url, headers):
     if request.status_code == 200:
         print('OK')
         soup = bs(request.content, 'html.parser')
-        a_name = soup.find('div', attrs={'class': '_1dQ3'}).span.string
+        a_name = soup.find('div', attrs={'class': '_1dQ3'}).span.p.string
         return(a_name)
     else:
             print('Error')
